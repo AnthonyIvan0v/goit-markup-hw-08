@@ -41,43 +41,6 @@
     color: var(--primary-text-color);
 }
 
-.section-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.our-clients {
-    display: flex;
-}
-
-.our-clients-items:not(:last-child) {
-    margin-right: 30px;
-}
-
-.our-clients-icon {
-    fill: currentColor;
-}
-
-.our-clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icons-color);
-    border-radius: 4px;
-    color: var(--icons-color);
-    transition-property:color, border;
-    @include animation;
-    &:hover,
-    &:focus {
-        border: 1px solid var(--accent-color);
-        color: var(--accent-color);
-    }
-}
-
-
-
 .social-list {
     display: flex;
     justify-content: center;
