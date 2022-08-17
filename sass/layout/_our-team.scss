@@ -1,0 +1,112 @@
+.section-team {
+    background-color: var(--background-team-secondary-button-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.employees-list {
+    display: flex;
+    text-align: center;
+}
+
+.employees-list-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+        
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+.name-specialty-employees {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.employees {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-black-color);
+    margin-bottom: 10px;
+}
+
+.employee-specialty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+}
+
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-clients {
+    display: flex;
+}
+
+.our-clients-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-clients-icon {
+    fill: currentColor;
+}
+
+.our-clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    color: var(--icons-color);
+    transition-property:color, border;
+    @include animation;
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+    }
+}
+
+
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-list-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icons-item {
+    fill: currentColor;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    color: var(--icons-color);
+    transition-property: color, background-color;
+    @include animation;
+   
+        &:hover,
+        &:focus {
+            color: var(--primary-white-color);
+            background: var(--accent-color);
+        }
+}
+

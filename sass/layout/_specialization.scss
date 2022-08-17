@@ -1,0 +1,45 @@
+.section-specialization {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.our-specialization {
+    display: flex;
+}
+
+.item-specialization {
+    position: relative;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+
+
+.specialization-description {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0%;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+
+}

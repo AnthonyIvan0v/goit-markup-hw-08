@@ -1,0 +1,27 @@
+/* 
+белый цевет текста #FFFFFF
+черный цвет #000000
+цвет заголовков #212121;
+вторичный цвет текста #757575;
+основной цвет фона #E5E5E5;
+цвет фона нашей команды и фон кнопок в портфолио #F5F4FA;
+цвет фона героя #C4C4C4;
+и подвала #2F303A;
+цвет акцента #2196F3
+цвет фона кнопки героя при hover #188CE8;
+цвет иконок социальных сетей #AFB1B8
+*/
+:root {
+    --primary-text-color:#757575;
+    --primary-white-color:#FFFFFF;
+    --primary-black-color:#000000;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --background-color:#FFFFFF ;
+    --background-hero-color:#C4C4C4;
+    --background-footer-color:#2F303A;
+    --background-hero-button-hover-color:#188CE8;
+    --background-team-secondary-button-color: #F5F4FA;
+    --icons-color:#AFB1B8;
+    --primary-font: "Roboto", sans-serif;
+}
