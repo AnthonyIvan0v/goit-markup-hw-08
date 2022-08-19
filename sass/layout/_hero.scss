@@ -3,28 +3,51 @@
     background-color: var(--background-hero-color);
     background-repeat: no-repeat;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
-    height: 600px;
     background-position: center;
     background-size: cover;
+    @media screen and (max-width:767px) {
+        max-width: 767px;
+        height: 400px;
+        padding: 118px 60px;
+       
+    }
+    
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    
+    @media screen and (max-width:767px) {
+        font-size: 24px;
+        line-height: 1.61;
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
 }
 
 .hero__button {

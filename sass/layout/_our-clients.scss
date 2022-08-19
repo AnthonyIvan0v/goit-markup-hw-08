@@ -1,15 +1,12 @@
-.section-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .our-clients {
+    justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.our-clients-items:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .our-clients-icon {
     fill: currentColor;
@@ -19,7 +16,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    @media screen  and (max-width:767px){
+        width: 210px;
+    } 
+    @media screen  and (min-width:768px){
+        width: 226px;
+    }
+    @media screen  and (min-width:768px){
+        width: 170px;
+    }
     height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
