@@ -32,6 +32,7 @@
   
 }
 
+
 .nav__list__items:not(:last-child) {
     margin-right: 50px;
 }
@@ -40,23 +41,28 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: var(--primary-black-color);
-    
-    @media screen and (max-width:1199px) {
-    font-size: 24px;
-    line-height: 1.16;  
-    }
+   
+}
 
-    @media screen and (min-width:768px) {
-        margin-right: 93px;   
+@media screen and (max-width:1199px) {
+    .logo{
+        font-size: 24px;
+        line-height: 1.16;  
     }
+}
+
+@media screen and (min-width:768px) {
+    .logo{
+        margin-right: 93px;  
+    } 
+}
     
-    @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
+    .logo{
         margin-right: 93px; 
         font-size: 26px;
-        line-height: 1.19;  
-    }
-    
-    
+        line-height: 1.19; 
+    } 
 }
 
 .logo__accent {
@@ -64,20 +70,7 @@
 }
 
 
-.mobile-munu__open-button{
-    margin: 0;
-    padding: 0;
-    height: 40px;
-    background-color: inherit;
-    outline: none;
-    transition-property: fill;
-    @include animation;
 
-    &:focus, &:hover{
-        fill: var(--accent-color);
-    }
-    
-}
 
 .site-nav {
     position: relative;
@@ -94,33 +87,37 @@
         }
 }
 
-.contacts-list { 
-    @media screen and (max-width:767px){
-        display: none;
+
+@media screen and (max-width:767px){
+        .contacts-list { 
+            display: none;
     }
-    @media screen and (min-width:768px) {
-        margin-left: auto;   
-}  
-    @media screen and (min-width:1200px) {
+}
+@media screen and (min-width:768px) {
+        .contacts-list { 
+            margin-left: auto;   
+    }  
+}
+@media screen and (min-width:1200px) {
+        .contacts-list { 
         display: flex; 
         align-items: center;
     }     
 }
 
-.contacts-list__items{
 
-    @media screen and (min-width:768px) and (max-width:1200px){
-        &:not(:last-child){
+
+ @media screen and (min-width:768px) and (max-width:1200px){
+        .contacts-list__items:not(:last-child){
         margin-bottom: 10px;
         }  
-    }
-
-    @media screen and (min-width:1200px){
-        &:not(:last-child){
+}
+@media screen and (min-width:1200px){
+        .contacts-list__items:not(:last-child){
         margin-right: 50px;
         }  
-    }
 }
+
 .contacts-list__link {
     display: flex;
     align-items: center;

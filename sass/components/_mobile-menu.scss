@@ -1,3 +1,22 @@
+.mobile-menu__open-button{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background-color: inherit;
+    outline: none;
+    transition-property: fill;
+    @include animation;
+
+    &:focus, &:hover{
+        fill: var(--accent-color);
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu__open-button{
+      display: none;
+    }
+  }
 
 @media screen and (max-width:767px){
     .mobile-menu{
@@ -17,6 +36,11 @@
        
     }
 }
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
 .mobile-menu__container{
     position: relative;
 
@@ -42,8 +66,13 @@
     &:focus, &:hover{
         fill: var(--accent-color);
     }
+    
   }
-
+  @media screen and (min-width: 768px) {
+    .mobile-menu__close-button{
+      display: none;
+    }
+  }
   .nav-mobile-menu__item{
     &:not(:last-child){
         margin-bottom: 32px;
@@ -108,3 +137,4 @@
     height: 22px;
     border: 1px solid rgba(33, 33, 33, 0.2);  
 }
+

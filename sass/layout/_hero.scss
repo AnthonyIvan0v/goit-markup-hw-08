@@ -1,5 +1,5 @@
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images_new/hero/hero_mobile.jpg");
     background-color: var(--background-hero-color);
     background-repeat: no-repeat;
     text-align: center;
@@ -7,20 +7,35 @@
     margin-right: auto;
     background-position: center;
     background-size: cover;
-    @media screen and (max-width:767px) {
-        max-width: 767px;
-        height: 400px;
-        padding: 118px 60px;
-       
-    }
-    
-    @media screen and (min-width:1200px) {
-        max-width: 1600px;
-        height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
+}
+@media screen and (max-width:767px) {
+    .hero {
+    max-width: 480px;
+    max-height: 400px;
+    padding: 118px 60px;
     }
 }
+@media screen and (max-width:767px) and
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images_new/hero/hero_mobile@2x.jpg');
+  }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
+}
+
+
 
 
 .hero__title {
@@ -31,23 +46,25 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    
-    @media screen and (max-width:767px) {
-        font-size: 24px;
-        line-height: 1.61;
-        width: 360px;
-        margin-left: auto;
-        margin-right: auto;
+}
+@media screen and (max-width:767px) {
+    .hero__title{
+    font-size: 26px;
+    line-height: 1.61;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
     }
+}
 
-    @media screen and (min-width:1200px) {
-        font-size: 44px;
-        line-height: 1.36;
-        width: 696px;
-        margin-left: auto;
-        margin-right: auto;
+@media screen and (min-width:1200px) {
+    .hero__title{
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     }
-  
 }
 
 .hero__button {
@@ -67,4 +84,8 @@
             background-color: var(--background-hero-button-hover-color);
         }
 }
-
+@media screen and (min-width:1200px) {
+   .hero__button{
+    width: 216px;
+   }
+}
