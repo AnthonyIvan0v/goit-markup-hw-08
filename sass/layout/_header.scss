@@ -1,10 +1,9 @@
 .page-header {
     border-bottom: 1px solid #ECECEC;   
 }
-
-.container_header {
-    
-    @media screen and (max-width:767px) {
+   
+@media screen and (max-width:767px) {
+    .container_header {
         display: flex;
         align-items: center; 
         justify-content: space-between;
@@ -65,15 +64,21 @@
 }
 
 
-.mobile-munu-button{
+.mobile-munu__open-button{
     margin: 0;
     padding: 0;
+    height: 40px;
     background-color: inherit;
     outline: none;
-    @media screen and (min-width:768px) {
-        display: none;   
+    transition-property: fill;
+    @include animation;
+
+    &:focus, &:hover{
+        fill: var(--accent-color);
     }
+    
 }
+
 .site-nav {
     position: relative;
     color: var(--title-text-color);
