@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -158,7 +158,7 @@ button {
 
 .modal {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /*min-width: 528px;
@@ -168,14 +168,14 @@ button {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .modal {
     width: 100vw;
   }
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
+    width: 480px;
   }
 }
 .modal__button-close {
@@ -687,6 +687,7 @@ button {
   }
 }
 .hero__button {
+  padding: 0;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -714,13 +715,11 @@ button {
     display: flex;
   }
 }
-
 @media screen and (min-width: 1200px) {
-  .feature__item:not(:last-child) {
+  .feature__item :not(:last-child) {
     margin-right: 30px;
   }
 }
-
 .feature__icon {
   background: #F5F4FA;
   border-radius: 4px;
@@ -730,6 +729,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 767px) {
   .feature__icon {
     width: 100%;
@@ -740,7 +740,6 @@ button {
     width: 270px;
   }
 }
-
 .feature__title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -757,6 +756,7 @@ button {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
+
 @media screen and (max-width: 767px) {
   .feature__item:not(:last-child) .feature__description {
     margin-bottom: 30px;
@@ -767,7 +767,6 @@ button {
     max-width: 270px;
   }
 }
-
 .section-specialization {
   padding-top: 0px;
   padding-bottom: 94px;
@@ -890,7 +889,6 @@ button {
 }
 
 .our-clients {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
