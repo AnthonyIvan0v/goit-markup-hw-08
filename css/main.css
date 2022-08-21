@@ -892,6 +892,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
+}
+
+.our-clients-item {
+  flex-basis: calc(53% - 30px);
 }
 
 .our-clients-icon {
@@ -909,11 +914,6 @@ button {
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (max-width: 767px) {
-  .our-clients-link {
-    width: 210px;
-  }
 }
 @media screen and (min-width: 768px) {
   .our-clients-link {
