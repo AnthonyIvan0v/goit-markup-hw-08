@@ -2,11 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
+    justify-content: center;
 
 }
 .our-clients-item{
    flex-basis:calc(53% - 30px);
+   
 
 }
 
