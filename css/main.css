@@ -135,6 +135,7 @@ button {
 .list {
   list-style: none;
   padding-left: 0;
+  padding-right: 0;
   margin: 0;
 }
 
@@ -896,7 +897,7 @@ button {
 }
 
 .our-clients-item {
-  flex-basis: calc(52% - 30px);
+  flex-basis: calc(53% - 30px);
 }
 
 .our-clients-icon {
