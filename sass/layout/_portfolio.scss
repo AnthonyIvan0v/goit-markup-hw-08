@@ -1,12 +1,11 @@
-.section-work-examples {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+    /*justify-content: center;*/
+    /*margin-bottom: 50px;*/
 }
 
 .filter-item:not(:last-child) {
@@ -36,11 +35,28 @@
 
 .card-set {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+@media screen and(min-width:1199px) {
+    .card-set {
+        gap: 30px;
+    }
 }
 
-.link-elements-card-set {
+.card-set__item{
+    &:not(:last-child){
+        margin-bottom:30px;
+    } 
+}
+
+@media screen and (max-width:767px) {
+    .card-set__item{
+        width: 100%; 
+    }
+    
+}
+.card-set__link {
     display: block;
     transition-property: box-shadow;
     @include animation;
@@ -72,8 +88,8 @@
     transition-property:transform;
     @include animation;
     
-        .link-elements-card-set:hover &,
-        .link-elements-card-set:focus & {
+        .card-set__link:hover &,
+        .card-set__link:focus & {
             transform: translatey(0%);
         }
 
