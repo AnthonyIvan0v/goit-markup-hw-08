@@ -19,6 +19,7 @@
    <header class="page-header">
 
         <div class="container container_header">
+            
             <nav class="nav">
                 <a href="./index.html" class="logo link"><span class="logo__accent">Web</span>Studio</a>
             
@@ -47,6 +48,7 @@
                         <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+       
             <div class="mobile-menu" data-menu>
                 <div class="container mobile-menu__container">
                     <button type="button" class="mobile-menu__close-button" data-menu-close>
@@ -99,7 +101,6 @@
 
 
     <!--MODAL-->
-
     <div class="backdrop is-hidden" data-modal> 
         <div class="modal">
             
@@ -156,8 +157,7 @@
             </div>
         </div>
     </div>
-
-<!--/MODAL-->
+    <!--/MODAL-->
 <!--/HERO-->
 
     
@@ -199,11 +199,32 @@
     <div class="container">
     <h2 class="section-title">Чим ми займаємось</h2>
     <ul class="list our-specialization">
-        <li class="item-specialization"> <img src="./images/work-processes/site-layout.jpg" alt="Создание макета сайта" width="370" height="294"> 
+        <li class="item-specialization"> 
+            <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/specialization/desktop-applications/desktop-applications-img.webp 1x, ./images_/specialization/desktop-applications/desktop-applications-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/specialization/desktop-applications/desktop-applications-img@2x.jpg 2x">
+                <img src="./images_/specialization/desktop-applications/desktop-applications-img.jpg" alt="Создание макета сайта" width="370" height="294">
+            </picture>
             <p class="specialization-description">Десктопні додатки</p></li>
-        <li class="item-specialization"> <img src="./images/work-processes/mobile-version.jpg" alt="Разработка мобильной версии" width="370" height="294">
+        <li class="item-specialization"> 
+            <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/specialization/mobile-applications/mobile-applications-img.webp 1x, ./images_/specialization/mobile-applications/mobile-applications-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/specialization/mobile-applications/mobile-applications-img@2x.jpg 2x">
+                <img src="./images_/specialization/mobile-applications/mobile-applications-img.jpg" alt="Разработка мобильной версии" width="370" height="294">
+            </picture>
             <p class="specialization-description">Мобільні додатки</p></li>
-        <li class="item-specialization"> <img src="./images/work-processes/bright-styling.jpg" alt="Добавление яркой стилизации" width="370" height="294">
+        <li class="item-specialization"> 
+            <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/specialization/design-solutions/design-solutions-img.webp 1x, ./images_/specialization/design-solutions/design-solutions-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/specialization/design-solutions/design-solutions-img@2x.jpg 2x">
+                <img src="./images_/specialization/design-solutions/design-solutions-img.jpg" alt="Добавление яркой стилизации" width="370" height="294">
+            </picture>
             <p class="specialization-description">Дизайнерські рішення</p></li>
     </ul>
     </div>
@@ -218,6 +239,16 @@
     <ul class="list employees-list">
         <li class="employees-list-item"> 
             <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/employees/igor-demyanenko/desktop/igor-demyanenko-img.webp 1x, ./images_/employees/igor-demyanenko/desktop/igor-demyanenko-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/employees/igor-demyanenko/desktop/igor-demyanenko-img.jpg 1x, ./images_/employees/igor-demyanenko/desktop/igor-demyanenko-img@2x.jpg 2x">
+
+                <source type="image/webp" media="(min-width:768px)"
+                    srcset="./images_/employees/igor-demyanenko/tablet/igor-demyanenko-img.webp 1x, ./images_/employees/igor-demyanenko/tablet/igor-demyanenko-img@2x.webp 2x">
+                <source media="(min-width:768px)"
+                    srcset="./images_/employees/igor-demyanenko/tablet/igor-demyanenko-img.jpg 1x, ./images_/employees/igor-demyanenko/tablet/igor-demyanenko-img@2x.jpg 2x">
+
                 <source type="image/webp" media="(max-width:767px)" srcset="./images_/employees/igor-demyanenko/mobile-version/igor-demyanenko-img.webp 1x, ./images_/employees/igor-demyanenko/mobile-version/igor-demyanenko-img@2x.webp 2x">
                 <source media="(max-width:767px)" srcset="./images_/employees/igor-demyanenko/mobile-version/igor-demyanenko-img@2x.jpg 2x">
                 <img src="./images_/employees/igor-demyanenko/mobile-version/igor-demyanenko-img.jpg" alt="сотрудник 1" width="" height="">
@@ -248,6 +279,16 @@
         </li>
         <li class="employees-list-item"> 
             <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/employees/olga-repina/desktop/olga-repina-img.webp 1x, ./images_/employees/olga-repina/desktop/olga-repina-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/employees/olga-repina/desktop/olga-repina-img.jpg 1x, ./images_/employees/olga-repina/desktop/olga-repina-img@2x.jpg 2x">
+
+                <source type="image/webp" media="(min-width:768px)"
+                    srcset="./images_/employees/olga-repina/tablet/olga-repina-img.webp 1x, ./images_/employees/olga-repina/tablet/olga-repina-img@2x.webp 2x">
+                <source media="(min-width:768px)"
+                    srcset="./images_/employees/olga-repina/tablet/olga-repina-img.jpg 1x, ./images_/employees/olga-repina/tablet/olga-repina-img@2x.jpg 2x">
+
                 <source type="image/webp" media="(max-width:767px)" srcset="./images_/employees/olga-repina/mobile-version/olga-repina-img.webp 1x, ./images_/employees/olga-repina/mobile-version/olga-repina-img@2x.webp 2x">
                 <source media="(max-width:767px)" srcset="./images_/employees/olga-repina/mobile-version/olga-repina-img@2x.jpg 2x">
                 <img src="./images_/employees/olga-repina/mobile-version/olga-repina-img.jpg" alt="сотрудник 2" width="" height="">
@@ -273,6 +314,16 @@
             </ul></div></li> 
         <li class="employees-list-item"> 
             <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/employees/mykola-tarasov/desktop/mykola-tarasov-img.webp 1x, ./images_/employees/mykola-tarasov/desktop/mykola-tarasov-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/employees/mykola-tarasov/desktop/mykola-tarasov-img.jpg 1x, ./images_/employees/mykola-tarasov/desktop/mykola-tarasov-img@2x.jpg 2x">
+                
+                <source type="image/webp" media="(min-width:768px)"
+                    srcset="./images_/employees/mykola-tarasov/tablet/mykola-tarasov-img.webp 1x, ./images_/employees/mykola-tarasov/tablet/mykola-tarasov-img@2x.webp 2x">
+                <source media="(min-width:768px)"
+                    srcset="./images_/employees/mykola-tarasov/tablet/mykola-tarasov-img.jpg 1x, ./images_/employees/mykola-tarasov/tablet/mykola-tarasov-img@2x.jpg 2x">
+
                 <source type="image/webp" media="(max-width:767px)" srcset="./images_/employees/mykola-tarasov/mobile-version/mykola-tarasov-img.webp 1x, ./images_/employees/mykola-tarasov/mobile-version/mykola-tarasov-img@2x.webp 2x">
                 <source media="(max-width:767px)" srcset="./images_/employees/mykola-tarasov/mobile-version/mykola-tarasov-img@2x.jpg 2x">
                 <img src="./images_/employees/mykola-tarasov/mobile-version/mykola-tarasov-img.jpg" alt="сотрудник 3" width="" height="">
@@ -298,6 +349,16 @@
             </ul></div></li>
         <li class="employees-list-item"> 
             <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                    srcset="./images_/employees/mihail-efremov/desktop/mihail-efremov-img.webp 1x, ./images_/employees/mihail-efremov/desktop/mihail-efremov-img@2x.webp 2x">
+                <source media="(min-width:1200px)"
+                    srcset="./images_/employees/mihail-efremov/desktop/mihail-efremov-img.jpg 1x, ./images_/employees/mihail-efremov/desktop/mihail-efremov-img@2x.jpg 2x">
+                
+                <source type="image/webp" media="(min-width:768px)"
+                    srcset="./images_/employees/mihail-efremov/tablet/mihail-efremov-img.webp 1x, ./images_/employees/mihail-efremov/tablet/mihail-efremov-img@2x.webp 2x">
+                <source media="(min-width:768px)"
+                    srcset="./images_/employees/mihail-efremov/tablet/mihail-efremov-img.jpg 1x, ./images_/employees/mihail-efremov/tablet/mihail-efremov-img@2x.jpg 2x">
+
                 <source type="image/webp" media="(max-width:767px)" srcset="./images_/employees/mihail-efremov/mobile-version/mihail-efremov-img.webp 1x, ./images_/employees/mihail-efremov/mobile-version/mihail-efremov-img@2x.webp 2x">
                 <source media="(max-width:767px)" srcset="./images_/employees/mihail-efremov/mobile-version/mihail-efremov-img@2x.jpg 2x">
                 <img src="./images_/employees/mihail-efremov/mobile-version/mihail-efremov-img.jpg" alt="сотрудник 4" width="" height="">
@@ -371,16 +432,16 @@
 
 <footer class="section footer">
     <div class="container footer-elements">
-        <div>
-    <a href="./index.html" class="logo link"><span class="logo__accent">Web</span><span class="logo-accent-footer">Studio</span></a>
+        <div class="foter-logo-adress-wrapper">
+            <a href="./index.html" class="logo  link"><span class="logo__accent">Web</span><span class="logo-accent-footer">Studio</span></a>
     
-    <address class="address"> 
-        <ul class="list address-list" id="our-contacts">
-            <li class="address-list-item"><a href="https://goo.gl/maps/NfwYeJhYgLd7gM2R6" target="_blank" rel="noopener noreferrer" class="location link">м. Київ, пр-т Лесі Українки, 26</a> </li>
-            <li class="address-list-item"><a href="mailto:info@example.com" class="contacts-footer link">info@example.com</a></li>
-            <li class="address-list-item"><a href="tel:+380991111111" class="contacts-footer link">+38 099 111 11 11</a></li>
-        </ul>
-    </address>
+            <address class="address"> 
+                <ul class="list address-list" id="our-contacts">
+                <li class="address-list-item"><a href="https://goo.gl/maps/NfwYeJhYgLd7gM2R6" target="_blank" rel="noopener noreferrer" class="location link">м. Київ, пр-т Лесі Українки, 26</a> </li>
+                <li class="address-list-item"><a href="mailto:info@example.com" class="contacts-footer link">info@example.com</a></li>
+                <li class="address-list-item"><a href="tel:+380991111111" class="contacts-footer link">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
         </div>
     <div class="our-social-links">
         <p class="join-subscribe">Приєднуйтесь</p>
@@ -406,6 +467,7 @@
      
     <div class="email-input-footer">
             <p class="join-subscribe">Підпишіться на розсилку</p>
+            <div class="form-wraper-footer">
             <form>
                
             <label for="" class="label-footer">
@@ -418,6 +480,7 @@
             </label>
            
         </form>
+        </div>
     </div>
     
     </div>
