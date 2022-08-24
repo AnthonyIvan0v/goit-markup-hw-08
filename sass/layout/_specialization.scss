@@ -11,16 +11,13 @@
 
 .our-specialization {
         display: flex;
+        gap: 30px;
      
 }
 
 .item-specialization {
     position: relative;
-    width: 370px;
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+    flex-basis: calc((100% - 60px)/3);       
 }
 
 

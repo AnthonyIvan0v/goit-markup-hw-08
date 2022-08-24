@@ -6,11 +6,44 @@
     text-align: center;
     @media screen and (min-width:768px){
         display: flex;
+        flex-wrap: wrap;
         align-items: baseline;
+        
     }
+    
 } 
-   
+@media screen and(min-width:1200px) {
+    .footer-elements {
+            text-align: start;
+    }
+}
+@media screen and(min-width:768px) {
+    .foter-logo-adress-wrapper{
+        margin-left: 76px;
+        }
+}
+@media screen and(min-width:1200px) {
+    .foter-logo-adress-wrapper {
+        margin:0;
+    }
+}
 
+@media screen and (min-width:768px){
+    .footer-elements .logo{
+    margin-right: 0;
+    }
+}
+.foter-logo-adress-wrapper{
+   
+}
+@media screen and(min-width:1200px) {
+    .form-wraper-footer {
+            display: flex;
+           
+            margin: 0;
+           
+        }
+}
 
 .logo-accent-footer {
     font-family: 'Raleway', sans-serif;
@@ -33,6 +66,7 @@
     margin-top: 20px;
     margin-bottom: 60px;
 }
+
 
 .address-list-item{
     @media screen and(min-width:1200px){
@@ -69,14 +103,23 @@
 }
 
 
-
-
-
-.our-social-links {
-    @media screen and(min-width:1200px){
-    margin-left: 70px;
+@media screen and(min-width:768px){
+    .our-social-links {
+        margin-right: 89px;
+        margin-left: auto;
+    }
 }
+
+
+
+@media screen and(min-width:1200px){
+        .our-social-links {
+            margin-left: 70px;
+            margin-right: 0 ;
+        }
 }
+
+
 
 .join-subscribe {
     margin-bottom: 20px;
@@ -115,12 +158,26 @@
 }
 
 
-
-.email-input-footer {
-    margin-left: auto;
+@media screen and (min-width:768px) {
+    .email-input-footer {
+        width: 60% ;
+        margin: 0 auto;
+        
+    }
+}
+@media screen and (min-width:1200px) {
+    .email-input-footer {
+        width: 49%;
+        margin-right: 0;
+        margin-left: auto;
+        text-align: start;
+    }
 }
 
+
 .label-footer {
+    display: flex;
+    align-items: baseline;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -141,6 +198,12 @@
     border-radius: 4px;
     background-color: var(--background-footer-color);
 }
+@media screen and (min-width:1200px) {
+    .field {
+    width: 358px;
+    }
+}
+
 
 .button-subscribe {
     display: flex;
@@ -163,6 +226,13 @@
        &:focus {
             background-color: var(--background-hero-button-hover-color);
         }
+}
+
+@media screen and (min-width:1200px) {
+    .button-subscribe {
+        margin-top: 0;
+        margin-left: 12px;
+    }
 }
 
 .send {

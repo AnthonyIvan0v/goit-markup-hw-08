@@ -2,10 +2,13 @@
     background-color: var(--background-team-secondary-button-color);  
 }
 
-.employees-list {
-    @media screen and (min-width:768px){
+
+@media screen and (min-width:768px){
+    .employees-list {
         display: flex;
+        flex-wrap: wrap;
         text-align: center;
+        gap: 30px;
     } 
     
 }
@@ -14,17 +17,23 @@
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
-    @media screen and (max-width:767px) {
+}
+@media screen and (max-width:767px) {
+    .employees-list-item{
         width: 100%;
-        &:not(:last-child){
-            margin-bottom: 30px;
-            }
-    }    
+        margin-bottom: 30px;
+        }
+}    
 
-    @media screen and (min-width:768px){
-        width: 270px;
-    } 
+@media screen and (min-width:768px){
+    .employees-list-item{
+        flex-basis: calc((100% - 1 * 30px)/2);
+    }
+} 
+@media screen and (min-width:1200px) {
+    .employees-list-item {
+        flex-basis: calc((100% - 90px)/4);
+    }
 }
 
 .name-specialty-employees {
