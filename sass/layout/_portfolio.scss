@@ -90,6 +90,15 @@
         }
 }
 
+@media screen and(min-width:768px) and(max-width:1199px) {
+    .card-set__link {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    
+}
+
 .position {
     position: relative;
     overflow: hidden;
@@ -100,7 +109,7 @@
     align-items: center;
     padding: 63px 23px;
     position: absolute;
-    transform: translateY(100%);
+    transform: translateY(101%);
     top: 0;
     bottom: 0;
     background-color: rgba(33, 150, 243, 0.9);
@@ -125,7 +134,8 @@
     padding-left: 24px;
     padding-right: 24px;
     border: 1px solid #EEEEEE;
-    border-top: none;  
+    border-top: none; 
+    flex-grow: 1;
     
     
 }
