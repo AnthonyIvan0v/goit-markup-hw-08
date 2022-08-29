@@ -679,7 +679,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     padding: 118px 204px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images_/hero/tablet/hero-tablet-img.jpg");
@@ -692,7 +692,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1018,11 +1018,6 @@ button {
     text-align: start;
   }
 }
-@media screen and (min-width: 768px) {
-  .foter-logo-adress-wrapper {
-    margin-left: 76px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .foter-logo-adress-wrapper {
     margin: 0;
@@ -1095,11 +1090,6 @@ button {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .our-social-links {
-    margin-left: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .our-social-links {
     margin-left: 70px;
@@ -1143,15 +1133,13 @@ button {
   background: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .email-input-footer {
-    margin-top: 60px;
-  }
+.email-input-footer {
+  margin-top: 60px;
 }
+
 @media screen and (min-width: 768px) {
   .email-input-footer {
     width: 60%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1159,6 +1147,7 @@ button {
     width: 49%;
     margin-right: 0;
     margin-left: auto;
+    margin-top: 0;
     text-align: start;
   }
 }
