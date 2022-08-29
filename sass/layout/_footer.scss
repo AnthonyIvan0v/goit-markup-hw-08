@@ -24,11 +24,7 @@
             text-align: start;
     }
 }
-@media screen and(min-width:768px) {
-    .foter-logo-adress-wrapper{
-        margin-left: 76px;
-        }
-}
+
 @media screen and(min-width:1200px) {
     .foter-logo-adress-wrapper {
         margin:0;
@@ -46,7 +42,6 @@
 @media screen and(min-width:1200px) {
     .form-wraper-footer {
             display: flex;
-           
             margin: 0;
            
         }
@@ -112,11 +107,7 @@
     }
 }
 
-@media screen and(min-width:768px){
-    .our-social-links {
-        margin-left: auto;
-    }
-}
+
 
 @media screen and(min-width:1200px){
         .our-social-links {
@@ -162,16 +153,16 @@
             background: var(--accent-color);
         }
 }
-@media screen and (max-width:767px) {
-    .email-input-footer {
-        margin-top: 60px;
-    }
+
+.email-input-footer {
+    margin-top: 60px;
 }
+
 
 @media screen and (min-width:768px) {
     .email-input-footer {
         width: 60% ;
-        margin: 0 auto;
+       
     }
 }
 @media screen and (min-width:1200px) {
@@ -179,6 +170,7 @@
         width: 49%;
         margin-right: 0;
         margin-left: auto;
+        margin-top:0;
         text-align: start;
     }
 }
